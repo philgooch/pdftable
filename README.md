@@ -14,7 +14,7 @@ See also `pdftable -h` and http://sourceforge.net/projects/pdftable
 
 Original author: (c) 2009 Kyle Cronan <kyle@pbx.org>
 
-This Python 3 implementation: (c) 2017 Phil Gooch <philgooch@users.noreply.github.com>
+This Python 3 implementation: (c) 2017 Phil Gooch
 
 As per Kyle's code, this version is licensed under GPLv3. See LICENSE file.
 
