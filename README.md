@@ -10,12 +10,11 @@ For example:
 
     pdftohtml -xml -stdout file.pdf | pdftable -f file%d.csv
 
-
 See also `pdftable -h` and http://sourceforge.net/projects/pdftable
 
-Original author: Kyle Cronan <kyle@pbx.org>
+Original author: (c) 2009 Kyle Cronan <kyle@pbx.org>
 
-This Python 3 implementation: Phil Gooch <philgooch@users.noreply.github.com>
+This Python 3 implementation: (c) 2017 Phil Gooch <philgooch@users.noreply.github.com>
 
 As per Kyle's code, this version is licensed under GPLv3. See LICENSE file.
 
@@ -29,11 +28,17 @@ Then install the module
     
 ## Command line usage
 
+Extract each table into a separate CSV file:
+
     pdftohtml -xml -stdout file.pdf | pdftable -f file%d.csv
+    
+Extract all tabular data into a single CSV file:
+
+    pdftohtml -xml -stdout file.pdf | pdftable -f file.csv
     
 ## Module usage
     
-    from pdftablr import table_extractor
+    from pdftablr.table_extractor import Extractor
 
     # XML file created from pdftohtml
     input_path = '/path/to/file.xml'
@@ -50,3 +55,9 @@ Then install the module
         tables = table_extractor.extract()
         for table in tables:
             table.output(writer=None)
+
+            
+# TODO
+- Investigate why Table.columns is sometimes initialised with empty columns
+- Refactor all the file handling
+- Execute pdftohtml within the code to allow PDF input
