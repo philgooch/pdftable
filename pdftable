@@ -1,4 +1,5 @@
 #!/usr/bin/env python
 
-import pdftable
-pdftable.command_line()
+from pdftablr import table_extractor
+
+table_extractor.command_line()
