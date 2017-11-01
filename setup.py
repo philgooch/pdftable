@@ -30,6 +30,9 @@ setup(
     
         python setup.py install
         
+    or
+        pip install pdftablr
+        
     ## Command line usage
     
         pdftohtml -xml -stdout file.pdf | pdftable -f file%d.csv

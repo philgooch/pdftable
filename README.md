@@ -26,6 +26,11 @@ Then install the module
 
     python setup.py install
     
+or
+
+    pip install pdftablr
+
+    
 ## Command line usage
 
 Extract each table into a separate CSV file:
