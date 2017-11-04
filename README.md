@@ -1,6 +1,6 @@
 # PDF Tablr
 
-Version: 0.1.0  [![Build Status](https://travis-ci.org/philgooch/pdftable.svg)](https://travis-ci.org/philgooch/pdftable.svg)
+Version: 0.1.0  [![Build Status](https://travis-ci.org/philgooch/pdftable.svg)](https://travis-ci.org/philgooch/pdftable/)
 
 
 This is a Python 3 module and command line utility that analyzes XML output from the
